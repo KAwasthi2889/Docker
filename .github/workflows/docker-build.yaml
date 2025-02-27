@@ -29,6 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: /
+          tags: |
             ghcr.io/KAwasthi2889/Docker:latest
             ghcr.io/KAwasthi2889/Docker:${{ github.sha }}
