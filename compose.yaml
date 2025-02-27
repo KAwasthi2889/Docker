@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports: 
+      - "5600:8080"
+    env_file:
+      - docker.env
+    environment:
+      - PORT=8080
+    volumes:
+      - records:/data
+volumes:
+  records:
